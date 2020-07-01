@@ -1,0 +1,12 @@
+<input #filterString/>
+<button (click)="Filter(filterString.value)">Filter</button>
+
+<table>
+    <tr>
+        <th>Products</th>
+    </tr>
+        <tr *ngFor="let product of filteredProducts">
+            <td>{{product}}</td>
+        </tr>
+    }
+</table>
